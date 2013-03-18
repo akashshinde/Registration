@@ -15,12 +15,13 @@ and open the template in the editor.
         <p><h1>Welcome to our open source registration system</h1>
         <br><br>
         <h2> Login To Enter </h2>
-        <form action="welcome_page" method="post">
-            <label>UserName</label> :  <input type="text" name="username" id="inputtext"><br>
-            <label>PassWord</label>> :  <input type="text" name="userpass">
+        <form action="loginServlet" method="post">
+            <label>UserName</label> :  <input type="text" name="username"><br>
+            <label>PassWord</label> :  <input type="text" name="userpass">
             <br><p>
-                
-           <input type="submit" value="login" class="styledbutton3">
+           <input type="submit" value="login">
         </form>
+        
+        <a href="index.jsp">Sign Up</a>
     </body>
 </html>

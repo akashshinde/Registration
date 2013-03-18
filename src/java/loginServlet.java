@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -26,27 +27,32 @@ public class loginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
        
+    
     }
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
         response.setContentType("text/html");
-        PrintWriter ps = response.getWriter();
-        try {
-            Connection con = DriverManager.getConnection("jdbc:derby://localhost:1527/sample","app","app");
-            
-      //      PreparedStatement sqli = con.prepareStatement("select email and pass from registeruser where ")
-            
-            
-            
-        } catch (SQLException ex) {
-            Logger.getLogger(loginServlet.class.getName()).log(Level.SEVERE, null, ex);
+        PrintWriter out = response.getWriter();
+        
+        String n = request.getParameter("username");
+        String p = request.getParameter("userpass");
+        
+        if(LoginDao.validate(n, p))
+        {
+            RequestDispatcher rd = request.getRequestDispatcher("Welcome.html");
+            rd.forward(request, response);
         }
         
+        else
+        {
+            out.println("Sorry username and password");
+            RequestDispatcher rd = request.getRequestDispatcher("Main.html");
+            rd.include(request, response);
+        }
         
-     
-    }
+        out.close();
 
+  }
 }

@@ -28,11 +28,6 @@
                <p><br>
                <br>
           <input type="submit" value="Download" /> 
-
-            
         </form>
-        <div >
-            <img src="my.jpg" class="bg" alt="">
-        </div>
     </body>
 </html>

@@ -8,6 +8,10 @@
         <servlet-name>loginServlet</servlet-name>
         <servlet-class>loginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoginDao</servlet-name>
+        <servlet-class>LoginDao</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>register</servlet-name>
         <url-pattern>/register</url-pattern>
@@ -16,9 +20,16 @@
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginDao</servlet-name>
+        <url-pattern>/LoginDao</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    <welcome-file-list>
+        <welcome-file>Main.html</welcome-file>
+    </welcome-file-list>
 </web-app>
