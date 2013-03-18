@@ -6,11 +6,10 @@
         Purpose of the stylesheet follows.
 */
 body {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: smaller;
-    padding: 50px;
-    color: #555;
-    background-color: highlight
+			content: "";
+			position: fixed; top: 0; bottom: 0; left:0; right:0;
+			border:20px solid skyblue;
+			padding: 20px;
 }
 
 h1 {
@@ -19,8 +18,8 @@ h1 {
     color: #be7429;
     font-weight: normal;
     width: 550px;
-    border-style: groove
-    
+    border-style: groove;
+    border-radius: 5px;
 }
 
 table {
@@ -111,3 +110,22 @@ label {
     width: 130px;
     border: blanchedalmond;
 }
+
+
+#top, #bottom, #left, #right {
+	background: #a5ebff;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
