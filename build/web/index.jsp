@@ -27,25 +27,8 @@
             </select>
                <p><br>
                <br>
-          <input type="submit" class="styled-button-3" value="Download" /> 
-<style type="text/css">
-.styled-button-3 {
-	-webkit-box-shadow:rgba(0,0,0,0.0.1) 0 1px 0 0;
-	-moz-box-shadow:rgba(0,0,0,0.0.1) 0 1px 0 0;
-	box-shadow:rgba(0,0,0,0.0.1) 0 1px 0 0;
-	background-color:#5B74A8;
-	border:1px solid #29447E;
-	font-family:'Lucida Grande',Tahoma,Verdana,Arial,sans-serif;
-	font-size:12px;
-	font-weight:700;
-	padding:2px 6px;
-	height:28px;
-	color:#fff;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px
-}
-</style>
+          <input type="submit" value="Download" /> 
+
             
         </form>
         <div >
