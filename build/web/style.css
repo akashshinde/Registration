@@ -100,3 +100,13 @@ inputtext {
     font: verdana;
     font-size: 1.3em;
 }
+
+label {
+    
+    
+    
+    font-family: monospace;
+    font-size: 1em;
+    width: 130px;
+    border: blanchedalmond;
+}
