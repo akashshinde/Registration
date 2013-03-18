@@ -27,7 +27,7 @@
             </select>
                <p><br>
                <br>
-          <input type="submit" value="Download" /> 
+          <input type="submit" value="Register" /> 
         </form>
     </body>
 </html>
