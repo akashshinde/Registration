@@ -10,6 +10,7 @@ body {
     font-size: smaller;
     padding: 50px;
     color: #555;
+    background-color: highlight
 }
 
 h1 {
@@ -17,9 +18,9 @@ h1 {
     font-size: 1.4em;
     color: #be7429;
     font-weight: normal;
-    width: 1200px;
-    alignment-adjust: central;
-    background-color: cornsilk;
+    width: 550px;
+    border-style: groove
+    
 }
 
 table {
