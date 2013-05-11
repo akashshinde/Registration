@@ -27,6 +27,8 @@ public class LoginDao {
             
         }
         
+        // Its required before try , catch Blog
+        
         catch(Exception e )
         {
             System.out.println("e");
